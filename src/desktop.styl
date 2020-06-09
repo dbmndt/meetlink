@@ -1,0 +1,93 @@
+@media screen and (min-width: 1150px)
+  main
+    display: grid
+    grid-template-columns: minmax(750px, 50%) 360px
+    column-gap: 40px
+    position: absolute
+    left: 50%
+    margin: 50px 0
+    transform: translateX(-50%)
+
+  /* Base Device Styles */
+  aside.device
+    width: 360px
+    height: 640px
+    background: linear-gradient(rgba(255,255,255,0.15), rgba(255,255,255,0.15)), 
+					linear-gradient(to right, hsl(240, 6%, 24%), hsl(240, 5%, 19%))
+    box-sizing: border-box
+    padding: 10px
+    border-radius: 20px
+    display: block
+
+  aside.device section.content
+    position: relative
+    height: 100%
+    background: hsl(240, 6%, 24%)
+    border-radius: 15px
+
+  /* Device Platforms */
+  ul.platforms
+    width: 340px
+    position: relative
+    display: grid
+    grid-gap: 20px
+    grid-template-rows: repeat(auto-fit, 100px)
+    grid-template-columns: 360px
+    padding: 0
+    position: absolute
+    left: -40px
+    top: 50%
+    transform: translateY(-50%)
+
+  ul.platforms li.platform
+    display: grid
+    grid-template-columns: 80px 1fr min-content
+    grid-template-rows: 80px
+    background: hsl(240, 5%, 19%)
+    border-radius: 5px
+    padding: 10px
+    color: #fff
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.25)
+    font-weight: 600
+
+  ul.platforms li.platform svg.icon,
+  ul.platforms li.platform a.button
+    height: 80px
+    background: rgba(255,255,255,0.25)
+    border-radius: 5px
+
+  ul.platforms li.platform svg.icon
+    width: 80px
+
+  ul.platforms li.platform a.button
+    padding: 10px 20px
+    box-sizing: border-box
+    line-height: 60px
+    font-size: 18px
+    text-decoration: none
+
+  ul.platforms li.platform span.name
+    display: block
+    line-height: 80px
+    text-align: center
+    font-weight: bold
+
+  section.about p
+    text-indent: 40px
+
+  section.about h1
+    font-size: 96px
+
+  section.about p,
+  section.about h2
+    font-size: 48px
+
+  section.about ul li
+    font-size: 36px
+    list-style: none
+
+  .tag-labs::after,
+  .tag-soon::after,
+  .tag-some::after
+    margin-top: 0px
+
