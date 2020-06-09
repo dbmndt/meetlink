@@ -1,0 +1,15 @@
+{
+	"private": true,
+	"name": "meetlink",
+	"author": "fall simply <simply@fallproject.org>",
+	"license": "MIT",
+	"description": "the marketing landing page for dbmn link",
+	"scripts": {
+		"build": "stylus src -c -o dist/"
+	},
+	"repository": "github:dbmndt/meetlink",
+	"homepage": "https://github.com/dbmndt/meetlink#readme",
+	"devDependencies": {
+		"stylus": "^0.54.7"
+	}
+}
