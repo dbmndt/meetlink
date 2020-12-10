@@ -1,0 +1,78 @@
+@mixin
+
+html
+	--swatchPrimary: hsl(240, 16%, 16%)
+	--swatchSecondary: hsl(240, 16%, 12%)
+	--swatch1: hsl(20, 32%, 48%)
+	--swatch2: hsl(40, 32%, 48%)
+	--swatch3: hsl(60, 32%, 48%)
+	--swatch4: hsl(80, 32%, 48%)
+	--swatch5: hsl(100, 32%, 48%)
+	--swatch6: hsl(120, 32%, 48%)
+	--swatch7: hsl(140, 32%, 48%)
+	--swatch8: hsl(160, 32%, 48%)
+	--swatch9: hsl(180, 32%, 48%)
+	--swatch10: hsl(200, 32%, 48%)
+	--swatch11: hsl(220, 32%, 48%)
+	--swatch12: hsl(240, 32%, 48%)
+	--swatch13: hsl(260, 32%, 48%)
+	--swatch14: hsl(280, 32%, 48%)
+	--swatch15: hsl(300, 32%, 48%)
+	--swatch16: hsl(320, 32%, 48%)
+	--swatch17: hsl(340, 32%, 48%)
+	--swatch18: hsl(360, 32%, 48%)
+
+body
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+	color: white
+	background: var(--swatchPrimary)
+main
+	padding: 1em
+a
+	color: inherit
+	
+body, h1, h2, p, ul, li
+	margin: 0
+h1
+	font-size: 4em
+p, h2
+	font-size: 2.5em
+
+aside.device
+	display: none
+		
+section.about
+	display: grid
+	grid-template-columns: 100%
+	row-gap: 40px
+	ul
+		display: grid
+		grid-template-rows: repeat(4, min-content)
+		row-gap: 20px
+		padding: 0 0 0 40px
+		li
+			list-style: none
+			font-size: 1.5em
+
+.tag-labs::after, 
+.tag-soon::after, 
+.tag-optional::after
+	font-size: 24px
+	padding: 2px 6px
+	margin-left: 6px
+	margin-top: 6px
+	border-radius: 4px
+	white-space: nowrap
+	display: inline-block
+
+.tag-labs::after
+	content: "🧪 experimental"
+	background: var(--swatch7)
+
+.tag-soon::after
+	content: "🕒 coming soon"
+	background: var(--swatch11)
+
+.tag-optional::after
+	content: "🎛️ on optional songs"
+	background: var(--swatch13)
